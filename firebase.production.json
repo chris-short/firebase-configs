@@ -36,6 +36,27 @@
           "key": "X-Frame-Options",
           "value": "SAMEORIGIN"
         }]
+      },
+      {
+        "source": "**/*",
+        "headers": [{
+          "key": "Content-Security-Policy",
+          "value": "frame-ancestors 'self'"
+        }]
+      },
+      {
+        "source": "**/*",
+        "headers": [{
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }]
+      },
+      {
+        "source": "**/*",
+        "headers": [{
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }]
       }
     ]
   }
