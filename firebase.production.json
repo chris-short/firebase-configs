@@ -10,14 +10,14 @@
     ],
     "headers": [
       {
-        "source" : "**/*.@(jpg|jpeg|gif|png|css|js|eot|otf|ttf|ttc|woff|pdf)",
+        "source" : "**/*.@(jpg|jpeg|gif|png|css|js|eot|otf|ttf|ttc|woff*|pdf)",
         "headers" : [ {
             "key" : "Cache-Control",
             "value" : "max-age=2764800"
         } ]
       },
       {
-        "source": "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
+        "source": "**/*.@(eot|otf|ttf|ttc|woff*|font.css)",
         "headers": [{
           "key": "Access-Control-Allow-Origin",
           "value": "*"
