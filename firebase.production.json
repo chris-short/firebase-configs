@@ -17,6 +17,13 @@
         } ]
       },
       {
+        "source" : "/favicons/*",
+        "headers" : [ {
+            "key" : "Cache-Control",
+            "value" : "max-age=2764800"
+        } ]
+      },
+      {
         "source": "**/*.@(eot|otf|ttf|ttc|woff*|font.css)",
         "headers": [{
           "key": "Access-Control-Allow-Origin",
